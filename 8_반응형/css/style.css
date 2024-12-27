@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+.wrap img{
+    width: 100%;
+    height: auto;
+}
+
+/* 기본화면 스타일 - 모바일 기준 작성하기 */
+
+.box1{
+    margin-bottom: 30px;
+}
+.box1 .pc{
+    display: none;
+}
+.box2{
+    margin-bottom: 30px;
+}
+.box2 li{
+    margin-bottom: 10px;
+}
+.box3 ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box3 li{
+    width: 50%;
+    padding: 0 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* 미디어쿼리를 이용하여
+    화면의 너비값이 변경될 때
+    적용될 스타일 값을 입력함 */
+
+/* 화면의 너비값이 최소 768px일 때
+    (화면의 너비값이 768px 이상일 때)
+     */
+@media screen and (min-width:769px){
+
+    /* 모바일 조건에서 작성한 스타일 중
+        추가, 삭제, 변경해야 하는 겂만 작성 */
+
+    .box1 .mo{
+        display: none;
+    }
+    .box1 .pc{
+        display: block;
+    }
+    .box2 ul{
+        display: flex;
+        padding: 0 10px;
+    }
+    .box2 li{
+        width: 33.33%;
+        padding: 0 5px;
+        box-sizing: border-box;
+    }
+    .box3{
+        padding: 0 10px;
+    }
+    .box3 ul{
+        flex-wrap: nowrap;
+    }
+    .box3 li{
+        width: 25%;
+    }
+
+}   /*태블릿 끝*/
+
+@media screen and (min-width: 1240px){
+    .box1{
+        height: 750px;
+    }
+    .box1 img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .box2, .box3{
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} /*pc 끝*/

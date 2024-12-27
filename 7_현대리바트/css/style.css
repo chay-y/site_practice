@@ -1,0 +1,254 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(20, 20, 20);
+  }
+ul, ol{list-style: none;}
+img{vertical-align: top; border: 0;}
+a{text-decoration: none; color: rgb(20, 20, 20);}
+
+.warp{
+  width: 100%;
+  min-height: 1200px;
+}
+.header{
+  height: 90px;
+}
+.headerIn{
+  position: relative;
+  width: 1200px;
+  height: 90px;
+  margin: 0 auto;
+  background-color: beige;
+}
+.headerIn .logo{
+  position: absolute;
+  top: 18px;
+}
+.headerIn .gnb{
+  position: absolute;
+  top: 50px;
+  right: 100px;
+}
+.gnb ul{
+  display: flex;
+  align-content: center;
+  font-size: 17px;
+  font-weight: 500;
+}
+.gnb li a:hover{
+  color: rgb(20, 126, 120);
+}
+.headerIn .gnb li{
+  text-align: center;
+  margin-left: 80px;
+}
+.btn-sc{
+  position: absolute;
+  top: 45px;
+  right: 0;
+}
+.util{
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+.util ul{
+  display: flex;
+}
+.headerIn .util ul li{
+  margin-left: 20px;
+}
+.util ul .login a{
+  font-weight: bold;
+}
+.util ul li a{
+  color: gray;
+}
+.mainSlide{
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  height: 600px;
+  margin-bottom: 80px;
+  overflow: hidden;
+}
+.msImg{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -960px;
+}
+.bt .btR{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -600px;
+  margin-top: -26px;
+}
+.bt .btL{
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  margin-right: -600px;
+  margin-top: -26px;
+}
+.brand{
+  margin: 0 auto;
+  width: 1200px;
+  margin-bottom: 80px;
+}
+.brand h2{
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.brandList{
+  display: flex;
+  justify-content: space-between;
+}
+.brandList .brL{
+  width: 230px;
+  border: 1px solid gainsboro;
+}
+.brandList .brR{
+  width: 961px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.brandList .brR li{
+  border: 1px solid gainsboro;
+  margin-left: 5px;
+}
+/* 
+  ※색상표현방식
+
+  1. 키워드 {color : red}
+
+  2. 16진수(hex) {color : #ff0000}
+    레드,그린,블루의 양을 0~f까지 16개의 숫자와 문자로 표기한 방식.
+    //포토샵에서 피커로 선택하면 명확하게 나오지만
+    문자로만 봤을때는 무슨 색인지 알기 어려움. -> rgb방식
+
+  3. rgb {color : rgb(225,0,0) }
+    레드,그린,블루의 양을 0~255의 숫자로 표기한 방식
+
+  4. rgba { color : rgba(255,0,0,0.35))
+    rgb의 값과 알파값(투명도)를 동시에 표기한 방식
+    알파값은 0~1사이의 소수로 표현 
+
+*/
+.event{
+  background-color: rgb(245, 245, 245);
+  height: 400px;
+  margin-bottom: 60px;
+}
+.eventIn{
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.evTitle .line{
+  width: 80px;
+  height: 12px;
+  border-top: 3px solid black;
+}
+.evTitle .text{
+  text-align: left;
+  margin-bottom: 30px;
+}
+.evTitle h2{
+  font-size: 25px;
+  line-height: 25px;
+}
+.evList ul{
+  display: flex;
+  justify-content: space-between;
+}
+.evList li{
+  margin-left: 25px;
+}
+.evBtn{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+}
+.evBtn .evBtnR{
+  margin-left: 5px;
+}
+.show{
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.show h2{
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.show ul{
+  display: flex;
+  justify-content: space-between;
+}
+.footer{
+  margin: 0 auto;
+}
+.footer *{
+  color: gray;
+}
+.family{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(245, 245, 245);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.family h3{
+  font-weight: 400;
+  margin-right: 40px;
+}
+.family ul{
+  display: flex;
+}
+.family li{
+  margin: 0 20px;
+}
+.family li a{
+  font-size: 16px;
+}
+.hdM a{
+  font-weight: 500;
+  color: rgb(34, 34, 34);
+}
+.footerIn{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.fLgo{
+  margin-right: 30px;
+}
+.fBox ul{
+  display: flex;
+  margin-bottom: 15px;
+}
+.fBox ul li{
+  margin-right: 20px;
+}
+.fBox p{
+  margin-bottom: 10px;
+}

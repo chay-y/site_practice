@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+.wrap{width: 1200px; margin: auto;}
+
+.header{
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.header ul{
+    
+}
+
